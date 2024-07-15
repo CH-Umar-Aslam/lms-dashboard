@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from './Index'
+import Course  from './course'
 
 export default function page() {
   return (
     <div>
-      <Index/>
+      <Course/>
     </div>
   )
 }

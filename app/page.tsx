@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Index from "./Index";
-
+import Index from "./Home";
+import "./globals.css"
 
 export default function Home() {
   return (
