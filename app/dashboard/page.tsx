@@ -1,10 +1,10 @@
 import React from 'react'
-import Course  from './course'
+import Courses  from './courses'
 
 export default function page() {
   return (
     <div>
-      <Course/>
+      <Courses/>
     </div>
   )
 }

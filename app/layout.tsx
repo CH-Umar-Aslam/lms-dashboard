@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import SideBar from "@/components/SideBar";
+import './globals.css'
+// import SideBar from "@/components/SideBar";
 
 // const inter = Inter({ subsets: ["latin"] });
+
+import { Roboto } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "LMS Next App",
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children, 
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="font">
       <div>{children}</div>
       </body>
     </html>

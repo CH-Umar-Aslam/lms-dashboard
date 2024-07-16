@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { FaRegUserCircle } from "react-icons/fa";
@@ -10,7 +11,12 @@ import { PiArrowSquareRightFill } from "react-icons/pi";
 import { GrHelpBook } from "react-icons/gr";
 
 
+
 export default function SideBar() {
+  // const params= useParams()
+
+  
+
   return (
     <div className='w-24  text-white space-y-5   py-5 h-screen  bg-slate-700'>
      <div className='flex flex-col items-center leading-5'>

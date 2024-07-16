@@ -1,27 +1,34 @@
+
 export const cardsData=[
     {
         title:"Cloud Computing",
         status:"Publish",
-        subTitle:"Cloud"
+        subTitle:"Cloud",
+   
     },
     {
+      
         title:"Data Science",
         status:"Publish",
-        subTitle:"AI"
+        subTitle:"AI",
     },
     {
         title:"Web Development",
         status:"Publish",
-        subTitle:"Development"
+        subTitle:"Development",
+      
     },
     {
         title:"UI/UX",
         status:"Publish",
-        subTitle:"Design"
+        subTitle:"Design",
+      
     },
     {
         title:"Data Engineering",
         status:"Publish",
-        subTitle:"Data"
+        subTitle:"Data",
+      
     },
 ]
+
