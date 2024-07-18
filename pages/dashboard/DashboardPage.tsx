@@ -1,9 +1,16 @@
+"use client"
 import React from 'react'
 import {cardsData} from "../../data/cards.data"
 import { LiaEditSolid } from "react-icons/lia";
 import { BiMessageDetail } from "react-icons/bi";
+import { useRouter } from 'next/navigation'
 
 export default function CoursePage() {
+  const router = useRouter() 
+  const handleCardClick =(id:any)=>{
+    router.push(`/dashboard/${id}`)
+
+  }
   return (
     <div className='flex flex-col  mt-12 pl-3 sm:pl-12  mx-auto'>
       <div className='space-y-6 mb-8'>
@@ -22,7 +29,7 @@ export default function CoursePage() {
       {
        
         cardsData?.map((course)=>(
-        <div key={course.title} className='rounded-lg  pb-5 border bg-transparent'>
+        <div onClick={()=>handleCardClick(course.id)} key={course.id} className='rounded-lg  pb-5 border bg-transparent'>
          <p className="rounded-sm h-28 w-52  bg-slate-400">
           <button className='bg-white rounded-md py-[5px] px-[12px] text-gray-500 mt-2 ml-2 '>Publish</button>
          </p>

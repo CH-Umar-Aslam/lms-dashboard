@@ -1,10 +1,11 @@
 import React from 'react'
-import Courses  from './courses'
+// import Dashboard  from './dashboard'
+import CoursePage from '@/pages/dashboard/DashboardPage'
 
 export default function page() {
   return (
     <div>
-      <Courses/>
+      <CoursePage/>
     </div>
   )
 }

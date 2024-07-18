@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import './globals.css'
+import "./globals.css";
+
 // import SideBar from "@/components/SideBar";
 
 // const inter = Inter({ subsets: ["latin"] });
 
 import { Roboto } from "next/font/google";
+import StoreProvider from "./StoreProvider";
 
 export const metadata: Metadata = {
   title: "LMS Next App",
@@ -12,14 +14,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children, 
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className="font">
-      <div>{children}</div>
+        <StoreProvider>
+          <main> {children}</main>
+        </StoreProvider>
       </body>
     </html>
   );
