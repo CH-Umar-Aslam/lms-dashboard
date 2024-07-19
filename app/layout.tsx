@@ -28,3 +28,4 @@ export default function RootLayout({
     </html>
   );
 }
+// in this we have to import store provider and wrapp its children

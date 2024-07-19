@@ -4,7 +4,7 @@ import { courseOptions } from "../../../data/cards.data";
 import Assignments from "@/pages/courses/Assignments";
 import Attendance from "@/pages/courses/Attendance";
 import Grades from "@/pages/courses/Grades";
-import DetailsPopup from "@/components/PopUP";
+
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { updatePage } from "@/lib/store/features/CurrentPage/currentPageSlice";
 
