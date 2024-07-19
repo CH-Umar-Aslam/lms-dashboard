@@ -1,12 +1,20 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import pageReducer from "./features/CurrentPage/currentPageSlice"
+import { persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
 
+const  persistConfig={
+  key:"course",
+  storage,
+}
+const roorReducer=combineReducers({
+  course:pageReducer
+})
+const persistedReducer=persistReducer(persistConfig,roorReducer)
 export const makeStore=()=>{
   return configureStore({
-    reducer: {
-      page:pageReducer
-    },
-  })
+    reducer: persistedReducer,
+  });
 }
 
 

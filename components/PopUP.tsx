@@ -1,6 +1,7 @@
 import React from "react";
 import { paramsType } from "@/data/AttendanceData";
 
+
 export default function PopUP({
   name,
   id,
@@ -12,7 +13,7 @@ export default function PopUP({
   status,
   dueDate,
 }: paramsType) {
-  console.log(name);
+  // console.log(name);
 
   return (
     <div className="fixed inset-0  bg-black bg-opacity-35">

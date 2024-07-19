@@ -11,11 +11,12 @@ const initialState: CounterState = {
 
 export const currentPageSlice = createSlice({
   name: 'page',
-  initialState,
+  initialState:{
+    value:""
+  },
   reducers: {
     updatePage: (state,action) => {
-        // console.log(action.payload);
-      state.value =action.payload
+      state.value =action.payload 
     },
     
     },

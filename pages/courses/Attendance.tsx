@@ -11,7 +11,7 @@ export default function Assignments() {
     setPopupModal(null);
   };
   return (
-    <div className="">
+    <table className="">
       <thead className="bg-blue-50">
         <tr className="grid grid-cols-5 border text-center py-5 gap-32">
           <th className="">Id</th>
@@ -38,6 +38,6 @@ export default function Assignments() {
       <div>
         {popupModal && <PopUP {...popupModal} closePopUp={closePopUp} />}
       </div>
-    </div>
+    </table>
   );
 }
