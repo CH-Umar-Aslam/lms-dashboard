@@ -23,32 +23,26 @@ export default function Assignments() {
 				</tr>
 			</thead>
 			<tbody>
-				{AttendanceData?.map(
-					(student: paramsType) => (
-						<tr
-							onClick={() =>
-								showPopupModal(student)
-							}
-							className="grid grid-cols-5 bg-slate-100 border py-7 text-center cursor-pointer gap-40"
-						>
-							<td className="">
-								{student.id}
-							</td>
-							<td className="">
-								{student.name}
-							</td>
-							<td className="">
-								{student.present}
-							</td>
-							<td className="">
-								{student.absent}
-							</td>
-							<td className="">
-								{student.percentage}%
-							</td>
-						</tr>
-					)
-				)}
+				{AttendanceData?.map((student: any) => (
+					<tr
+						onClick={() =>
+							showPopupModal(student)
+						}
+						className="grid grid-cols-5 bg-slate-100 border py-7 text-center cursor-pointer gap-40"
+					>
+						<td className="">{student.id}</td>
+						<td className="">{student.name}</td>
+						<td className="">
+							{student.present}
+						</td>
+						<td className="">
+							{student.absent}
+						</td>
+						<td className="">
+							{student.percentage}%
+						</td>
+					</tr>
+				))}
 			</tbody>
 			<div>
 				{popupModal && (
